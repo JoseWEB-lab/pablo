@@ -1,0 +1,7 @@
+SHADOWWORLD 1.0.0 - ESTADO
+JAR: NO COMPILADO (entorno sin red ni dependencias Forge/Gradle).
+Cambios 31-oct-2026 (sin compilar ni probar en Minecraft):
+- Recetas: ingredientes en formato string (1.21.2+).
+- assets/shadowworld/items/*.json: definiciones de item (1.21.4+).
+- Java: setId en Block/Item Properties y useBlockDescriptionPrefix en BlockItem.
+Compilar: sube la carpeta a GitHub (Actions genera el JAR) o ejecuta BUILD-WINDOWS.bat con Gradle 8.14.x.

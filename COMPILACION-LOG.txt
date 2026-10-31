@@ -1,0 +1,42 @@
+SHADOWWORLD 1.0.0 - INTENTO DE COMPILACION
+Fecha: 2026-10-31
+Objetivo: Minecraft Java 1.21.11 / Forge 61.2.4 / Java 21
+
+RESULTADO: NO COMPILADO. NO HAY JAR.
+
+Comprobaciones realizadas:
+1. java -version
+   Resultado: OpenJDK 21.0.12.1 (64-bit).
+
+2. gradle --version
+   Resultado: gradle no encontrado (command not found).
+
+3. Descarga directa del MDK oficial:
+   URL: https://maven.minecraftforge.net/net/minecraftforge/forge/1.21.11-61.2.4/forge-1.21.11-61.2.4-mdk.zip
+   Resultado: curl error 6 - Could not resolve host: maven.minecraftforge.net.
+
+4. Descarga de Gradle 8.14.6:
+   URL: https://services.gradle.org/distributions/gradle-8.14.6-bin.zip
+   Resultado: curl error 6 - Could not resolve host: services.gradle.org.
+
+5. Descarga alternativa mediante la herramienta de archivos:
+   Resultado: fallo de descarga.
+
+6. Validacion local de recursos:
+   - 91 archivos JSON: todos parsean correctamente.
+   - 24 texturas PNG: presentes.
+   - Codigo fuente Java: presente.
+
+Limitacion concreta:
+No hay una instalacion Gradle local, no existe gradlew.bat ni gradle-wrapper.jar en este entorno, y no se pueden descargar MDK ni dependencias porque los dominios externos no resuelven por DNS. Sin ForgeGradle y las clases de Minecraft/Forge no es posible producir un JAR mod valido desde este entorno.
+
+No se creo un JAR de relleno, no se compilo contra stubs y no se declara BUILD SUCCESSFUL.
+
+Para compilar en Windows:
+1. Descarga el MDK oficial Forge 1.21.11 - 61.2.4:
+   https://files.minecraftforge.net/net/minecraftforge/forge/index_1.21.11.html
+2. Copia gradlew, gradlew.bat y gradle/wrapper/ completos desde el MDK a la raiz de este proyecto.
+3. Comprueba Java 21.
+4. Ejecuta BUILD-WINDOWS.bat.
+5. Si termina con BUILD SUCCESSFUL, el JAR esperado sera build\\libs\\shadowworld-1.0.0.jar.
+6. Todavia tendras que probarlo en un cliente y servidor dedicados reales.

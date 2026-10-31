@@ -1,0 +1,17 @@
+SHADOWWORLD 1.0.0 — ESTADO DE LA FUENTE
+
+Incluido:
+- Registro Java de tres familias de recursos y tres herramientas por familia (pico, pala y azada).
+- Minerales normales y de pizarra profunda, materiales refinados y bloques de almacenamiento.
+- Generación de minerales mediante configured features, placed features y Forge biome modifiers.
+- Recetas, tablas de botín, etiquetas de minería y reparación, modelos, texturas y traducciones.
+- Avances vanilla para registrar el primer hallazgo de cada material.
+
+Pendiente:
+- Conjuntos de armadura.
+- Estructuras explorables y su botín.
+- Guía interactiva y almacenamiento de descubrimientos personalizado por jugador.
+- Configuración Forge activa y ajustes de generación runtime.
+- Wrapper de Gradle, compilación Forge, JAR y pruebas reales de cliente/servidor.
+
+No existe un JAR compilado en esta entrega. No renombrar el ZIP como JAR ni instalarlo como mod.
